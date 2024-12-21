@@ -1,26 +1,32 @@
 {
+  "go.buildTags": "integration,e2e",
+  "gopls": {
+    "ui.semanticTokens": true
+  },
+  "go.formatTool": "gofumpt",
   "keyboard.dispatch": "keyCode",
   "editor.formatOnSave": true,
   "editor.suggest.insertMode": "replace",
-  "terminal.integrated.fontFamily": "MesloLGS NF",
   "editor.linkedEditing": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "window.zoomLevel": 0.5,
   "launch": {},
   "[json]": {},
   "editor.minimap.enabled": false,
-  "breadcrumbs.enabled": false,
+  "breadcrumbs.enabled": true,
   "workbench.iconTheme": "material-icon-theme",
   "update.showReleaseNotes": false,
   "zenMode.hideLineNumbers": false,
-  "editor.fontSize": 13,
+  "editor.fontSize": 10,
   "vim.leader": "<Space>",
   "vim.hlsearch": true,
   "vim.handleKeys": {
     "<C-s>": false,
     "<C-f>": false,
     "<C-v>": false,
-    "<C-c>": false
+    "<C-c>": false,
+    "<C-z>": false,
+    "<C-x>": false,
+    "<C-/>": false,
   },
   "vim.normalModeKeyBindingsNonRecursive": [
     {
@@ -31,8 +37,6 @@
         ":nohl"
       ],
     },
-    // NAVIGATION
-    // switch b/w buffers
     {
       "before": [
         "<S-h>"
@@ -49,7 +53,6 @@
         ":bnext"
       ]
     },
-    // splits
     {
       "before": [
         "leader",
@@ -105,7 +108,6 @@
         "workbench.action.focusRightGroup"
       ]
     },
-    // NICE TO HAVE
     {
       "before": [
         "leader",
@@ -235,7 +237,64 @@
       ]
     }
   ],
+  "git.decorations.enabled": true,
   "editor.fontLigatures": true,
-  "workbench.colorTheme": "Gruvbox Dark Hard",
-  "workbench.editor.enablePreview": false
+  "workbench.editor.enablePreview": false,
+  // Hot pink scroll bar
+  "workbench.colorCustomizations": {
+    "editorGroupHeader.tabsBackground": "#0A0E1A", // Soothing green for the tab strip background
+    "scrollbarSlider.background": "#F0C67444",
+    "tab.activeBorder": "#FF69B4",
+    "tab.activeBorderTop": "#FF69B4",
+    "terminal.background": "#0A0E1A",
+    "terminal.foreground": "#C5C8C6",
+    "terminalCursor.foreground": "#FFFFFF", // Bright white cursor
+    "terminalCursor.background": "#1C1C1C", // Black text when cursor is on it
+    // Selection settings
+    "terminal.ansiBlack": "#1C1C1C",
+    "terminal.ansiRed": "#CC6666",
+    "terminal.ansiGreen": "#B5BD68",
+    "terminal.ansiYellow": "#F0C674",
+    "terminal.ansiBlue": "#81A2BE",
+    "terminal.ansiMagenta": "#B294BB",
+    "terminal.ansiCyan": "#8ABEB7",
+    "terminal.ansiWhite": "#C5C8C6",
+    "terminal.ansiBrightBlack": "#666666",
+    "terminal.ansiBrightRed": "#D54E53",
+    "terminal.ansiBrightGreen": "#B9CA4A",
+    "terminal.ansiBrightYellow": "#E7C547",
+    "terminal.ansiBrightBlue": "#7AA6DA",
+    "terminal.ansiBrightMagenta": "#C397D8",
+    "terminal.ansiBrightCyan": "#70C0B1",
+    "terminal.ansiBrightWhite": "#FFFFFF",
+    "editorCursor.background": "#FF0000", // Semi-transparent bright white
+    "editorLineNumber.activeForeground": "#FFD700",
+    "tab.activeBackground": "#000000", // Color for the active tab in the focused editor group
+    // Other tabs (inactive and unfocused)
+    "tab.inactiveBackground": "#1e1e1e", // Inactive tabs in the focused group
+    "tab.unfocusedActiveBackground": "#1e1e1e", // Active tab in unfocused editor group
+    "tab.unfocusedInactiveBackground": "#1e1e1e", // Inactive tabs in unfocused groups
+    "editor.lineHighlightBackground": "#000000"
+  },
+  "workbench.colorTheme": "Default Dark+",
+  "gitlens.currentLine.enabled": true,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "comment",
+        "settings": {
+          "foreground": "#FF8C00" //"#FF8C00" // Pumpkin spice
+        }
+      },
+      {
+        "scope": [
+          "entity.name.function", // Targets function names
+          "support.function" // Covers built-in functions
+        ],
+        "settings": {
+          "foreground": "#39FF14" // Neon Green
+        }
+      },
+    ]
+  },
 }
