@@ -242,6 +242,7 @@
   "workbench.editor.enablePreview": false,
   // Hot pink scroll bar
   "workbench.colorCustomizations": {
+    "editor.selectionHighlightBackground": "#ffff0044",
     "editorGroupHeader.tabsBackground": "#0A0E1A", // Soothing green for the tab strip background
     "scrollbarSlider.background": "#F0C67444",
     "tab.activeBorder": "#FF69B4",
