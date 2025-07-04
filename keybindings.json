@@ -1,3 +1,6 @@
+// Place your key bindings in this file to override the defaults
+[
+  // NAVIGATION
   {
     "key": "ctrl+shift+0",
     "command": "workbench.action.evenEditorWidths"
