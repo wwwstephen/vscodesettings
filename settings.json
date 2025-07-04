@@ -120,15 +120,6 @@
     {
       "before": [
         "leader",
-        "q"
-      ],
-      "commands": [
-        ":q!"
-      ]
-    },
-    {
-      "before": [
-        "leader",
         "x"
       ],
       "commands": [
@@ -242,15 +233,16 @@
   "workbench.editor.enablePreview": false,
   // Hot pink scroll bar
   "workbench.colorCustomizations": {
-    "editor.selectionHighlightBackground": "#ffff0044",
+    "editor.selectionHighlightBackground": "#FF69B488",
     "editorGroupHeader.tabsBackground": "#0A0E1A", // Soothing green for the tab strip background
     "scrollbarSlider.background": "#F0C67444",
+    "tab.border": "#FFFFFF",
     "tab.activeBorder": "#FF69B4",
     "tab.activeBorderTop": "#FF69B4",
     "terminal.background": "#0A0E1A",
     "terminal.foreground": "#C5C8C6",
     "terminalCursor.foreground": "#FFFFFF", // Bright white cursor
-    "terminalCursor.background": "#1C1C1C", // Black text when cursor is on it
+    "terminalCursor.background": "#005500", // Black text when cursor is on it
     // Selection settings
     "terminal.ansiBlack": "#1C1C1C",
     "terminal.ansiRed": "#CC6666",
@@ -269,13 +261,16 @@
     "terminal.ansiBrightCyan": "#70C0B1",
     "terminal.ansiBrightWhite": "#FFFFFF",
     "editorCursor.background": "#FF0000", // Semi-transparent bright white
+    "editorCursor.foreground": "#fbff00", // Semi-transparent bright white
     "editorLineNumber.activeForeground": "#FFD700",
-    "tab.activeBackground": "#000000", // Color for the active tab in the focused editor group
+    "tab.activeBackground": "#240046", // Color for the active tab in the focused editor group
     // Other tabs (inactive and unfocused)
     "tab.inactiveBackground": "#1e1e1e", // Inactive tabs in the focused group
     "tab.unfocusedActiveBackground": "#1e1e1e", // Active tab in unfocused editor group
     "tab.unfocusedInactiveBackground": "#1e1e1e", // Inactive tabs in unfocused groups
-    "editor.lineHighlightBackground": "#000000"
+    "editor.lineHighlightBackground": "#240046",
+    "statusBar.background": "#000000", // Jet black background
+    "statusBar.foreground": "#FFF700", // Purple text
   },
   "workbench.colorTheme": "Default Dark+",
   "gitlens.currentLine.enabled": true,
@@ -298,4 +293,5 @@
       },
     ]
   },
+  "vim.operatorPendingModeKeyBindingsNonRecursive": [],
 }
